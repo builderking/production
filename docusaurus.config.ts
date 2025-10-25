@@ -89,7 +89,9 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'Ondi Logo',
-        src: 'img/ondi-logo-header.png',
+        src: 'img/ondi-logo-512.png',
+        href: 'https://ondi.io',
+        target: '_self',
       },
       items: [
         {
