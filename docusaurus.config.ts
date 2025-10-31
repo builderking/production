@@ -9,6 +9,15 @@ const config: Config = {
   tagline: 'Your Logistics Partner — The smarter way to move products online',
   favicon: 'img/favicon.ico',
 
+  // Client-available config
+  customFields: {
+    // Use same-origin session endpoint to avoid CORS in production
+    chatkitSessionUrl: '/api/chatkit/session',
+    chatkitWorkflowId: 'wf_69039d9633ac8190aabba5c3ee297cc70ce212b517da778d',
+    // UPDATE THIS: Get a new domain key for docs.ondi.io from OpenAI ChatKit settings
+    chatkitDomainPublicKey: 'domain_pk_690473beabac81909f2761a18cd208e70f58ffa752d4fb0d',
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -19,6 +28,14 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+
+  // Load OpenAI ChatKit bubble on all pages
+  scripts: [
+    {
+      src: 'https://cdn.platform.openai.com/deployments/chatkit/chatkit.js',
+      async: true,
+    },
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -56,8 +73,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',

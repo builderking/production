@@ -21,7 +21,11 @@
         ]
       }
     ],
-    "cleanUrls": true
-  }
+    "cleanUrls": true,
+    "rewrites": [
+      { "source": "/api/chatkit/session", "function": "chatkitSession" }
+    ]
+  },
+  "functions": { "source": "functions" }
 }
 
