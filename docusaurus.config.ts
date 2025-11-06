@@ -119,6 +119,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Learn', position: 'left'},
         {
+          href: 'https://api-docs.ondi.io',
+          label: 'API Documentation',
+          position: 'right',
+        },
+        {
           href: 'https://app.ondi.io',
           label: 'Try Ondi!',
           position: 'right',

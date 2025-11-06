@@ -1,0 +1,9 @@
+{
+  "label": "API Key Management",
+  "link": {
+    "type": "generated-index",
+    "description": "Create, rotate, and revoke API keys."
+  }
+}
+
+

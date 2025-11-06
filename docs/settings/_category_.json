@@ -1,0 +1,10 @@
+{
+  "label": "Settings",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Settings overview with Payment Methods, System, Brand, and API Keys."
+  }
+}
+
+
