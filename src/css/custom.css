@@ -106,8 +106,14 @@ html, body, #__docusaurus {
   transition: transform 150ms ease, opacity 150ms ease;
 }
 
-.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[aria-expanded="true"]::after,
-.theme-doc-sidebar-menu .menu__list-item-collapsible:not(.menu__list-item--collapsed) > .menu__link::after {
+/* Collapsed state: arrow right */
+.theme-doc-sidebar-menu li.menu__list-item.menu__list-item--collapsed > .menu__list-item-collapsible > .menu__link::after {
+  transform: rotate(0deg);
+  opacity: 0.6;
+}
+
+/* Expanded state: arrow down */
+.theme-doc-sidebar-menu li.menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible > .menu__link::after {
   transform: rotate(90deg);
   opacity: 0.9;
 }

@@ -1,0 +1,10 @@
+{
+  "label": "Resaurant Menu",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Resaurant Menu overview with Customer Menu and POS."
+  }
+}
+
+
