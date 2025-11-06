@@ -15,6 +15,10 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Global background color for light theme */
+  --ifm-background-color: #f7f7f8;
+  /* Remove default sidebar sublist caret icon */
+  --ifm-menu-link-sublist-icon: none;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,6 +31,107 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Global background color for dark theme */
+  --ifm-background-color: #0b0d10;
+  /* Remove default sidebar sublist caret icon */
+  --ifm-menu-link-sublist-icon: none;
+}
+
+/* Ensure the entire app uses the background color variable */
+html, body, #__docusaurus {
+  background-color: var(--ifm-background-color) !important;
+}
+
+/* ----- Docs sidebar redesign ----- */
+/* Base container tweaks */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Spacing and typography */
+.theme-doc-sidebar-menu .menu__list {
+  padding: 8px 10px;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* Hover state */
+.theme-doc-sidebar-menu .menu__link:hover {
+  background-color: var(--ifm-hover-overlay);
+}
+
+/* Active item emphasis */
+.theme-doc-sidebar-menu .menu__link--active {
+  position: relative;
+  background-color: color-mix(in oklab, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.theme-doc-sidebar-menu .menu__link--active::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--ifm-color-primary);
+}
+
+/* Hide default caret element; we'll provide our own slim chevron */
+.theme-doc-sidebar-menu .menu__caret {
+  display: none !important;
+}
+
+/* Small chevron indicator for expandable categories (right-aligned) */
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link::after {
+  content: "";
+  margin-left: auto;
+  width: 14px;
+  height: 14px;
+  background-color: currentColor;
+  opacity: 0.6;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>') center / contain no-repeat;
+          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>') center / contain no-repeat;
+  transform: rotate(0deg);
+  transition: transform 150ms ease, opacity 150ms ease;
+}
+
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[aria-expanded="true"]::after,
+.theme-doc-sidebar-menu .menu__list-item-collapsible:not(.menu__list-item--collapsed) > .menu__link::after {
+  transform: rotate(90deg);
+  opacity: 0.9;
+}
+
+/* Make category labels (items with submenus) bold to distinguish them */
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
+  font-weight: 700;
+}
+
+/* Category headers look like regular items but slightly toned */
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
+  opacity: 0.9;
+}
+
+/* Nested list indentation without icons */
+.theme-doc-sidebar-menu .menu__list .menu__list {
+  margin-left: 12px;
+  border-left: 1px dashed var(--ifm-color-emphasis-200);
+  padding-left: 10px;
+}
+
+/* Dark mode subtle hover background adjustment */
+[data-theme='dark'] .theme-doc-sidebar-menu .menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 /* Increase navbar logo size slightly */
