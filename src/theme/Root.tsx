@@ -175,7 +175,7 @@ export default function Root({ children }: Props): React.JSX.Element {
           bottom: `${widgetBottomPx}px`,
           right: '20px',
           width: '400px',
-          height: '64vh',
+          height: '75vh',
           maxWidth: '90vw',
           maxHeight: '90vh',
           borderRadius: '12px',
