@@ -9,77 +9,70 @@ description: Define vehicles and create them for optimized dispatch and load man
 
 ## What is a Vehicle?
 
-A vehicle represents the physical delivery asset (bike, van, truck, etc.) that carries out orders in your logistics system. Each vehicle is registered and managed to ensure efficient dispatching and accurate load assignments.
+A vehicle represents the physical delivery asset (bike, van, truck, etc.) that carries out deliveries in the system. Each vehicle profile includes identification details, capacity specifications, technical requirements, and operational status. Vehicle profiles enable the system to match deliveries to appropriate transport resources, ensure load optimization, and maintain efficient dispatch workflows based on capacity and special requirements.
 
-Vehicles enable you to:
+## Vehicle List
 
-- **Assign drivers** and match deliveries based on vehicle capacity
-- **Track availability** (active/inactive) and maintenance
-- **Define requirements** like license type, fuel type, and special features (e.g., refrigeration, GPS)
-- **Support optimized routing** and load management for deliveries
+The Vehicle List provides a comprehensive view of all registered vehicles in your delivery fleet.
 
-Using vehicles ensures the right delivery resources are used for the right tasks—improving delivery accuracy and operational efficiency.
+Use the list to monitor vehicle availability, verify specifications, and manage assignments. The interface includes:
 
-## Create a Vehicle
+- **Search functionality**: Quickly locate vehicles by name, code, or license plate.
+- **Filtering options**: Filter vehicles by status (Active/Inactive), fuel type, capacity range, or special features.
+- **Sorting capabilities**: Sort by name, code, capacity, or recent activity.
+- **Quick actions**: Access vehicle details, edit profiles, or change status directly from the list.
 
-Follow these steps to add a new vehicle.
+The list displays key information such as vehicle name, unique code, capacity units, assigned driver, fuel type, and current status for easy reference.
 
-### 1) Navigate to Vehicle Creation
+## Create a New Vehicle
 
-Go to the Delivery Management module in your admin portal. Select "Vehicles", then click "Create Vehicle".
+Creating a vehicle profile requires entering key information across several categories to ensure accurate load management and operational efficiency.
 
-### 2) Fill Basic Vehicle Details
+### Basic Information
 
-- **Vehicle Name**: Enter a clear name for identification (for example, "Delhi Van 01" or "Bike Zone A"). The name appears in dispatch assignments and reports.
-- **Vehicle Code**: Enter a unique code (for example, license plate number or a system-generated code).
-  - The code must be unique and contain no spaces or unauthorized characters.
-  - Codes help the system track vehicles automatically and prevent duplication.
-- **Description** (optional): Add details such as usage purpose, depot location, or maintenance notes.
-- **Image** (optional): Upload a photo of the vehicle for easy visual identification.
+Provide the vehicle's identification details including a descriptive name (e.g., "Delhi Van 01" or "Bike Zone A"), unique vehicle code (e.g., license plate number or system code), and an optional description. The vehicle code must be unique and contain no spaces or unauthorized characters to ensure accurate tracking and prevent duplication. Optionally upload a vehicle image for easy visual identification in dispatch interfaces and reports.
 
-### 3) Set Capacity Unit
+### Capacity & Load Specifications
 
-- **Capacity Unit**: Defines the maximum carrying capacity of the vehicle. The system uses this to decide how many orders can be assigned during dispatch.
-- **Standard unit size**: 1 unit = 20 cm and 0.5 kg
-- **Example**: A truck with capacity 300 units can carry a total equivalent of 300 × (20 cm, 0.5 kg) worth of packages.
+Define the vehicle's maximum carrying capacity using capacity units. The standard unit size is 1 unit = 20 cm and 0.5 kg. For example, a truck with capacity 300 units can carry a total equivalent of 300 × (20 cm, 0.5 kg) worth of packages. The system uses this capacity metric during dispatch to automatically calculate load assignments, prevent overloading, and ensure efficient vehicle utilization across deliveries.
 
-::::info
-Why it matters: The system automatically uses capacity to prevent overloading and ensures efficient vehicle utilization.
-::::
+### Vehicle Requirements & Features
 
-### 4) Configure Vehicle Requirements
+Specify the vehicle's operational characteristics to match it with appropriate delivery types. Select the required license type (Standard, Commercial, or Special) to ensure driver licensing compliance. Choose the fuel type (Petrol, Diesel, Electric, or Hybrid) for sustainability tracking, cost calculations, and routing preferences. Add special features such as Lift Gate, Refrigeration, or GPS Tracking to match vehicle capabilities with specific delivery needs like temperature-controlled shipments or real-time tracking requirements.
 
-These define what kind of deliveries this vehicle can handle.
+### Status & Availability
 
-- **License Type**: Choose between Standard, Commercial, or Special to ensure proper licensing for specific order types.
-- **Fuel Type**: Select Petrol, Diesel, Electric, or Hybrid for sustainability tracking, cost calculations, and routing.
-- **Special Features**: Tick applicable features such as Lift Gate, Refrigeration, and GPS Tracking to match vehicle capabilities with delivery needs (for example, temperature-controlled shipments).
+Set the vehicle's operational status (Active or Inactive). Active vehicles are available for delivery assignments and appear in dispatch operations. Inactive status excludes vehicles from dispatch during maintenance, downtime, or decommissioning while preserving historical records for reporting and future reactivation.
 
-### 5) Set Vehicle Status
+### Validation
 
-- **Status (Active/Inactive)**:
-  - Active vehicles are available for delivery assignments.
-  - Inactive vehicles are excluded from dispatch (for example, during maintenance or downtime).
-  - Keep inactive vehicles in the system without deleting them for historical context and future reactivation.
+The system validates all required fields and enforces business rules. Vehicle codes must be unique, capacity must be a positive value, and mandatory fields (name, code, capacity) must be completed before submission. Any validation errors are highlighted for correction.
 
-### 6) Review & Confirm
+## Edit an Existing Vehicle
 
-Double-check all details—especially the vehicle code and capacity. Click **Create Vehicle** to save.
+Vehicle profiles can be updated at any time to reflect changes in specifications, assignments, or availability.
 
-If required fields are missing or entries are invalid (such as duplicate codes), the system displays an error. Fix the issues and resubmit. Once created, the vehicle appears in the vehicle list, ready for driver assignment and dispatch operations.
+Common updates include:
 
-## Notes
+- **Capacity adjustments**: Update capacity units to reflect vehicle modifications or recalibrations.
+- **Requirement changes**: Modify license type, fuel type, or special features as vehicle specifications change.
+- **Status changes**: Toggle between Active and Inactive status for maintenance, repairs, or seasonal usage.
+- **Identification updates**: Modify vehicle name, code, or description for better organization.
+- **Feature updates**: Add or remove special features as vehicles are retrofitted or upgraded.
+- **Driver reassignment**: Update vehicle-driver assignments based on operational needs.
+
+Editing vehicle profiles ensures accurate dispatch operations, maintains optimal load distribution, and supports dynamic fleet management. The system retains historical assignment data for reporting and auditing purposes.
 
 ::::note
-Inactive vehicles are ignored by the dispatch system—use this to temporarily pause usage without deleting the vehicle.
+Keep vehicle profiles updated—especially capacity and status details—to maintain accurate dispatch operations and prevent overloading.
 ::::
 
 ::::tip
-Accurate capacity ensures load distribution and route optimization work correctly.
+Accurate capacity ensures load distribution and route optimization work correctly. Use consistent naming formats (e.g., `VEH-1001` or license plates) for easier fleet management.
 ::::
 
 ::::info
-Vehicle requirements help filter and assign the right vehicle for specialized deliveries (for example, cold storage).
+Mark vehicles as Inactive instead of deleting them if they are temporarily unavailable. This preserves historical data and allows for easy reactivation after maintenance or repairs.
 ::::
 
 

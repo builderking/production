@@ -9,84 +9,72 @@ description: Define drivers and create driver profiles for compliant, efficient 
 
 ## What is a Driver?
 
-A driver represents the individual responsible for carrying out deliveries in the system. Each driver is registered and managed to ensure proper assignment to vehicles, compliance with license requirements, and efficient delivery operations.
+A driver represents the individual responsible for carrying out deliveries in the system. Each driver profile includes basic information, license and certifications, vehicle and zone assignments, and operational status. Driver profiles enable the system to match deliveries to qualified personnel, ensure compliance with license requirements, and maintain efficient dispatch workflows.
 
-Driver profiles help the system match deliveries to qualified personnel and maintain smooth dispatch workflows. Users can manage all drivers used for delivery operations. Each driver has their own basic information, license and certifications, assignments (vehicle and zones), and operational status.
+## Driver List
 
-## Create a Driver
+The Driver List provides a comprehensive view of all registered drivers in your delivery network.
 
-Follow these steps to add a new driver.
+Use the list to monitor driver availability, verify credentials, and manage assignments. The interface includes:
 
-### 1) Navigate to Driver Creation
+- **Search functionality**: Quickly locate drivers by name, code, or contact details.
+- **Filtering options**: Filter drivers by status (Active/Inactive), assigned zones, vehicle type, or license expiry.
+- **Sorting capabilities**: Sort by name, code, recent activity, or license expiry date.
+- **Quick actions**: Access driver details, edit profiles, or change status directly from the list.
 
-Go to the Delivery Management module in your admin portal. Select "Drivers", then click "Add Driver".
+The list displays key information such as driver name, unique code, assigned vehicle, zones, license expiry, and current status for easy reference.
 
-### 2) Fill Basic Driver Details
+## Create a New Driver
 
-Provide the driver’s general information to identify them throughout the system.
+Creating a driver profile requires entering key information across several categories to ensure compliance and operational efficiency.
 
-- **Full Name**: Enter the driver’s complete name. This appears across dispatch, tracking, and reporting modules.
-- **Driver Code / ID**: Enter a unique identifier (for example, `DRV-001` or `DLK123`).
-  - Codes must not include spaces or unauthorized characters.
-  - Why it matters: Unique codes ensure accurate tracking and prevent assignment errors.
-- **Contact Details**: Add the driver’s phone number and/or email address for communications and notifications.
-- **Profile Image** (optional): Upload a photo for quick visual identification in driver lists and dashboards.
+When creating a driver, you can link the profile to an existing user account. Once you select a user during driver creation, that user automatically becomes a driver and gains access to driver-specific features and applications.
 
-### 3) Enter License & Certifications
+### Basic Information
 
-Ensure the driver meets the necessary compliance requirements for operation.
+Provide the driver's identification details including full name, unique driver code (e.g., `DRV-001`), contact information (phone and email), and an optional profile image. The driver code must be unique and follow your organization's naming conventions for accurate tracking and assignment.
 
-- **License Number and Type**: Enter the license number and select the type — Standard, Commercial, or Special.
-  - Why it matters: Certain vehicles or delivery types require specific license categories.
-- **License Expiry Date**: Enter the expiration date. The system uses this to trigger reminders before expiry and prevent dispatching unlicensed drivers.
-- **Certifications & Skills** (optional): Add qualifications such as Forklift Certified, Hazmat Training, or Refrigeration Handling.
-  - Why it matters: Helps match drivers with the right delivery requirements.
+### License & Certifications
 
-### 4) Set Assignments & Operational Settings
+Enter the driver's license number, type (Standard, Commercial, or Special), and expiry date. The system uses the expiry date to trigger renewal reminders and prevent dispatching unlicensed drivers. Optionally add certifications and skills such as Forklift Certified, Hazmat Training, or Refrigeration Handling to match drivers with specific delivery requirements.
 
-Define how and where a driver operates in your delivery network.
+### Assignments & Operational Settings
 
-- **Assigned Vehicle**: Select a registered vehicle to link with this driver.
-  - Why it matters: Ensures accurate pairing of vehicle and driver during dispatch.
-- **Assigned Zones**: Select one or more service zones where the driver will operate.
-  - Why it matters: Restricts delivery assignments to defined areas, improving efficiency and route planning.
-- **Driver Preferences**: Add notes about preferred routes, handling instructions, or operational preferences.
-- **Languages**: Choose the languages the driver speaks, useful for customer interactions or regional deliveries.
+Assign the driver to a registered vehicle and select one or more service zones where they will operate. Zone assignments restrict delivery assignments to defined areas, improving route efficiency and workload distribution. You can also specify driver preferences, operational notes, and languages spoken for customer interactions.
 
-### 5) Set Status & Access
+### Status & Access
 
-Define whether the driver is currently active and if they can access the driver application.
+Set the driver's operational status (Active or Inactive) and configure whether they can access the driver mobile application. Active drivers are available for delivery assignments, while Inactive status excludes them from dispatch during leave or downtime.
 
-- **Status (Active/Inactive)**:
-  - Active: The driver can be assigned to deliveries.
-  - Inactive: The driver is excluded from dispatch (useful for leave or downtime).
-- **Login / App Access**: Specify whether this driver can log in to the mobile app or portal for delivery tracking and updates.
+### Validation
 
-### 6) Review & Create
+The system validates all required fields and enforces business rules. Driver codes must be unique, license expiry dates cannot be in the past, and mandatory fields (name, contact, license number) must be completed before submission. Any validation errors are highlighted for correction.
 
-Before saving, review all entered details and click **Create Driver** to confirm.
+## Edit an Existing Driver
 
-If any required field is missing or invalid (for example, duplicate code or past license expiry), the system shows an error. Correct the highlighted issues and submit again.
+Driver profiles can be updated at any time to reflect changes in credentials, assignments, or availability.
 
-## Validation Rules
+Common updates include:
 
-- **Unique Driver Code**: Driver code/ID must be unique — duplicates are not allowed.
-- **Valid License Expiry**: License expiry date cannot be in the past.
-- **Mandatory Fields**: Name, contact, and license number must be filled before submission.
-- The system validates all fields and highlights missing or invalid entries.
+- **License renewal**: Update license numbers and expiry dates to maintain compliance.
+- **Assignment changes**: Reassign drivers to different vehicles or zones based on operational needs.
+- **Contact updates**: Modify phone numbers, email addresses, or contact preferences.
+- **Status changes**: Toggle between Active and Inactive status for leave, training, or termination.
+- **Certifications**: Add new skills or qualifications as drivers complete training programs.
+- **Access control**: Enable or disable driver app access based on role changes.
 
-## Notes
+Editing driver profiles ensures accurate dispatch operations, maintains compliance with licensing requirements, and supports dynamic workforce management. The system retains historical assignment data for reporting and auditing purposes.
 
 ::::note
-Keep driver profiles updated—especially license and expiry details—to maintain compliance.
+Keep driver profiles updated—especially license and expiry details—to maintain compliance and prevent operational disruptions.
 ::::
 
 ::::tip
-Assign zones strategically for optimized routing and balanced workloads.
+Assign zones strategically for optimized routing and balanced workloads. Use consistent naming formats (e.g., `DRV-1001`) for easier management.
 ::::
 
 ::::info
-Use consistent naming or code formats (for example, `DRV-1001`) for better management. Mark drivers as Inactive instead of deleting them if they are temporarily unavailable.
+Mark drivers as Inactive instead of deleting them if they are temporarily unavailable. This preserves historical data and allows for easy reactivation.
 ::::
 
 
