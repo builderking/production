@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { MessageSquare, X } from 'lucide-react';
 import type { Props } from '@theme/Root';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import SidebarIcons from '@site/src/components/SidebarIcons';
 
 export default function Root({ children }: Props): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -126,6 +127,7 @@ export default function Root({ children }: Props): React.JSX.Element {
 
   return (
     <>
+      <SidebarIcons />
       {children}
       
       {/* Floating Chat Launcher */}
@@ -174,7 +176,7 @@ export default function Root({ children }: Props): React.JSX.Element {
           position: 'fixed',
           bottom: `${widgetBottomPx}px`,
           right: '20px',
-          width: '400px',
+          width: '480px',
           height: '75vh',
           maxWidth: '90vw',
           maxHeight: '90vh',

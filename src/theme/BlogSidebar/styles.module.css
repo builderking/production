@@ -1,0 +1,44 @@
+.blogSidebar {
+  padding: 1rem 0;
+}
+
+.sidebarTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.categoryGroup {
+  margin-bottom: 1.5rem;
+}
+
+.categoryTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.postItem {
+  margin-bottom: 0.5rem;
+}
+
+.postLink {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.postLink:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: underline;
+}
+

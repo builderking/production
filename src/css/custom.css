@@ -144,3 +144,102 @@ html, body, #__docusaurus {
 .navbar__logo img {
   height: 36px; /* default is ~32px; bump slightly */
 }
+
+/* Active navbar link styling - rounded gray background like breadcrumb */
+.navbar__link--active {
+  background-color: var(--ifm-color-emphasis-200) !important;
+  border-radius: 9999px !important;
+  padding: 6px 12px !important;
+  transition: background-color 150ms ease !important;
+}
+
+/* Dark mode adjustment for active navbar link */
+[data-theme='dark'] .navbar__link--active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Sidebar icons styling */
+.sidebar-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 8px !important;
+  flex-shrink: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+  color: inherit !important;
+}
+
+.sidebar-icon-svg {
+  width: 16px !important;
+  height: 16px !important;
+  display: block !important;
+  stroke: currentColor !important;
+  fill: none !important;
+}
+
+/* Ensure menu links display as flex to properly align icons */
+.menu__link {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Adjust icon spacing for collapsible items */
+.menu__list-item-collapsible > .menu__link .sidebar-icon {
+  margin-right: 8px !important;
+}
+
+/* Blog post title styling - make it much smaller */
+.article__title {
+  font-size: 1.25rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 600 !important;
+}
+
+/* Hide blog post date and read time - comprehensive selectors */
+.article__date,
+.article__reading-time,
+.article__metadata,
+.margin-bottom--sm .article__date,
+.margin-bottom--sm .article__reading-time,
+.margin-bottom--sm .article__metadata,
+[class*="article__date"],
+[class*="article__reading-time"],
+[class*="article__metadata"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hide date/read time in blog list items */
+.blog-list-page .article__date,
+.blog-list-page .article__reading-time,
+.blog-list-page .article__metadata,
+.blog-wrapper .article__date,
+.blog-wrapper .article__reading-time,
+.blog-wrapper .article__metadata {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hide any element containing date-like text */
+.margin-bottom--sm:has(.article__date),
+.margin-bottom--sm:has(.article__reading-time) {
+  display: none !important;
+}
+
+/* Hide the entire metadata row if it contains dates - but be selective */
+.article__header .margin-bottom--sm:not(.article__title) {
+  display: none !important;
+}
+
+/* Hide any margin-bottom--sm that comes after title but before content */
+.article__title + .margin-bottom--sm {
+  display: none !important;
+}
+
+/* Target specific date format patterns */
+.margin-bottom--sm[class*="date"],
+.margin-bottom--sm[class*="time"] {
+  display: none !important;
+}
