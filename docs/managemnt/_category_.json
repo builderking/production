@@ -5,6 +5,6 @@
     "type": "generated-index",
     "description": "Manage users and the roles assigned to each user. A tenant can have users with roles such as admins and staff (drivers, warehouse managers, etc.). You can also view customers and filter them by type (individual or business).\n\nAdd new users or invite users, view user details, and manage business customers’ API keys, webhooks, and other business settings. You can also assign or switch roles for your users (e.g., make a user a tenant accountant)."
   },
-  "collapsed": false
+  "collapsed": true
 }
 
