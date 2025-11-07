@@ -7,6 +7,8 @@ description: High-level overview of the Ondi platform and documentation structur
 
 # Overview
 
+![ONDI Overview](./_img/ondi-overview.png)
+
 **ONDI** is your all-in-one logistics and operations platform designed to power modern businesses from end to end. Whether you're running a delivery service, managing warehouses, operating an e-commerce store, or running a restaurant, ONDI provides the enterprise-grade tools you need to scale efficiently and delight your customers.
 
 ### Why Choose ONDI?
