@@ -1,19 +1,79 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+last-mile-delivery:
+  label: Last Mile Delivery
+  permalink: /last-mile-delivery
+  description: Articles about last mile delivery configuration and management
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+first-mile-delivery:
+  label: First Mile Delivery
+  permalink: /first-mile-delivery
+  description: Articles about first mile delivery setup and operations
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+warehousing:
+  label: Warehousing
+  permalink: /warehousing
+  description: Articles about warehouse management and inventory operations
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+inventory-management:
+  label: Inventory Management
+  permalink: /inventory-management
+  description: Articles about managing inventory and stock levels
+
+store-front:
+  label: Store Front
+  permalink: /store-front
+  description: Articles about setting up and managing your online store
+
+e-commerce:
+  label: E-commerce
+  permalink: /e-commerce
+  description: Articles about e-commerce integration and setup
+
+restaurant:
+  label: Restaurant
+  permalink: /restaurant
+  description: Articles about restaurant business configuration
+
+pos:
+  label: POS
+  permalink: /pos
+  description: Articles about Point of Sale system configuration
+
+menu-management:
+  label: Menu Management
+  permalink: /menu-management
+  description: Articles about managing restaurant menus
+
+api:
+  label: API
+  permalink: /api
+  description: Articles about API integration and development
+
+integration:
+  label: Integration
+  permalink: /integration
+  description: Articles about integrating Ondi with other systems
+
+developers:
+  label: Developers
+  permalink: /developers
+  description: Technical articles for developers
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Articles about automating logistics operations
+
+configuration:
+  label: Configuration
+  permalink: /configuration
+  description: Articles about configuring Ondi modules
+
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Beginner guides and getting started tutorials
+
+customer-portal:
+  label: Customer Portal
+  permalink: /customer-portal
+  description: Articles about customer portal setup and features

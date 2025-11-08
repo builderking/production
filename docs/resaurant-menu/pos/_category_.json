@@ -1,0 +1,9 @@
+{
+  "label": "POS",
+  "link": {
+    "type": "generated-index",
+    "description": "Point-of-Sale flows, order handling, and reconciliation."
+  }
+}
+
+

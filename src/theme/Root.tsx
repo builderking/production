@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { MessageSquare, X } from 'lucide-react';
 import type { Props } from '@theme/Root';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import SidebarIcons from '@site/src/components/SidebarIcons';
 
 export default function Root({ children }: Props): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -117,37 +119,53 @@ export default function Root({ children }: Props): React.JSX.Element {
     }
   }, [isOpen, sessionUrl, workflowId, domainPk]);
 
+  // Layout constants so spacing stays consistent between the launcher and widget
+  const launcherBottomPx = 20; // distance from viewport bottom for the launcher
+  const launcherHeightPx = 40; // launcher height
+  const gapPx = 16; // desired space between launcher and widget when open
+  const widgetBottomPx = launcherBottomPx + launcherHeightPx + gapPx;
+
   return (
     <>
+      <SidebarIcons />
       {children}
       
-      {/* Floating Chat Bubble */}
+      {/* Floating Chat Launcher */}
       <div
         id="chatkit-bubble"
-        title="Chat with us!"
+        title={isOpen ? 'Close chat' : 'Ask Ondi AI'}
         onClick={() => setIsOpen(!isOpen)}
         style={{
           position: 'fixed',
-          bottom: '20px',
+          bottom: `${launcherBottomPx}px`,
           right: '20px',
-          width: '60px',
-          height: '60px',
-          borderRadius: '50%',
-          backgroundColor: '#2563EB',
-          color: 'white',
+          height: `${launcherHeightPx}px`,
+          width: isOpen ? `${launcherHeightPx}px` : 'auto',
+          padding: isOpen ? '0' : '0 10px',
+          borderRadius: '10px',
+          backgroundColor: '#000',
+          color: '#fff',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          gap: '8px',
           cursor: 'pointer',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-          zIndex: 9998,
-          fontSize: '24px',
+          boxShadow: '0 6px 14px rgba(0,0,0,0.12)',
+          zIndex: 10000,
+          fontSize: '14px',
           transition: 'transform 0.2s',
         }}
         onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
         onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
       >
-        💬
+        {isOpen ? (
+          <X size={18} aria-hidden="true" />
+        ) : (
+          <>
+            <MessageSquare size={18} aria-hidden="true" />
+            <span style={{ fontWeight: 600 }}>Ask Ondi AI</span>
+          </>
+        )}
       </div>
 
       {/* Chat Window - Always mounted, visibility controlled */}
@@ -156,12 +174,12 @@ export default function Root({ children }: Props): React.JSX.Element {
         ref={chatContainerRef}
         style={{
           position: 'fixed',
-          bottom: '90px',
+          bottom: `${widgetBottomPx}px`,
           right: '20px',
-          width: '400px',
-          height: '600px',
+          width: '480px',
+          height: '75vh',
           maxWidth: '90vw',
-          maxHeight: '80vh',
+          maxHeight: '90vh',
           borderRadius: '12px',
           boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
           zIndex: 9999,

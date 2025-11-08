@@ -62,11 +62,11 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -118,6 +118,11 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Learn', position: 'left'},
+        {
+          href: 'https://api-docs.ondi.io',
+          label: 'API Documentation',
+          position: 'right',
+        },
         {
           href: 'https://app.ondi.io',
           label: 'Try Ondi!',
