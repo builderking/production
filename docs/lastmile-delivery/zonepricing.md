@@ -88,19 +88,14 @@ The list view supports several administrative functions:
 - **Expiration Tracking**: Monitor approaching end dates for seasonal or promotional pricing
 - **Service Parity**: Verify that multiple services on the same route reflect intended pricing differentiation
 
-:::tip
-Regularly review the Zone Pricing List to identify outdated rules, pricing gaps between zones, and opportunities for rate optimization based on operational cost changes.
-:::
+![Pricing List Tools](./img/pricinglist.png)
 
-:::note
-Screenshot placeholder: Zone Pricing List interface with filters and sorting options
-:::
-
----
 
 ## Create a New Zone Pricing Rule
 
 Creating a Zone Pricing rule establishes a custom rate structure for a specific route and service combination. This process enables strategic pricing that reflects operational costs, competitive positioning, and market dynamics more accurately than universal default rates.
+
+![Add Pricing Tools](./img/AddPricing.png)
 
 ### Purpose of Custom Zone Pricing
 
@@ -237,6 +232,8 @@ Zone Pricing edits follow a clear operational model:
 - **Existing Orders**: Retain original pricing configuration from creation time, ensuring financial integrity and preventing retroactive changes
 - **Historical Reporting**: Analytics preserve accurate historical data, with pricing changes visible only in forward-looking metrics
 - **Service Default Fallback**: If edits invalidate a rule (e.g., expiring end date), affected routes automatically revert to delivery service default pricing
+
+![Edit pricing Tools](./img/EditPricing.png)
 
 This approach balances pricing agility with operational stability.
 

@@ -32,11 +32,15 @@ Use the list to monitor item status, verify product details, and manage catalog 
 - **Sorting capabilities**: Sort by item name, SKU, category, or recent activity.
 - **Quick actions**: Access item details, edit profiles, or change status directly from the list.
 
+ ![Inventory List Tools](./img/ItemList.png)
+
 The list displays key information such as item name, SKU, barcode, category, subcategory, brand, status, and timestamps for easy reference. This centralized view supports catalog management, product audits, and operational planning across the organization.
 
 ## Create a New Inventory Item
 
 Creating an inventory item profile requires entering key information across several categories to ensure accurate product identification and operational efficiency.
+
+ ![Add Item  Tools](./img/AddItem.png)
 
 ### Basic Identification
 
@@ -74,6 +78,8 @@ Common updates include:
 - **Status changes**: Toggle between Active and Inactive status for product lifecycle management, seasonal availability, or discontinuation.
 - **SKU modifications**: Standardize SKU conventions (use caution as SKU changes may affect inventory transactions and integrations).
 
+ ![Edit Item Tools](./img/EditItem.png)
+ 
 Editing inventory items ensures accurate stock tracking, maintains catalog integrity, and supports dynamic product management. The system retains historical data for reporting and auditing purposes, preserving traceability even as item details evolve.
 
 :::note

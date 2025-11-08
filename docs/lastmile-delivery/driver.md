@@ -22,6 +22,8 @@ Use the list to monitor driver availability, verify credentials, and manage assi
 - **Sorting capabilities**: Sort by name, code, recent activity, or license expiry date.
 - **Quick actions**: Access driver details, edit profiles, or change status directly from the list.
 
+![Driver List Tools](./img/driverlist.png)
+
 The list displays key information such as driver name, unique code, assigned vehicle, zones, license expiry, and current status for easy reference.
 
 ## Create a New Driver
@@ -29,6 +31,8 @@ The list displays key information such as driver name, unique code, assigned veh
 Creating a driver profile requires entering key information across several categories to ensure compliance and operational efficiency.
 
 When creating a driver, you can link the profile to an existing user account. Once you select a user during driver creation, that user automatically becomes a driver and gains access to driver-specific features and applications.
+
+![Add Driver Tools](./img/AdddDriver.png)
 
 ### Basic Information
 
@@ -50,6 +54,8 @@ Set the driver's operational status (Active or Inactive) and configure whether t
 
 The system validates all required fields and enforces business rules. Driver codes must be unique, license expiry dates cannot be in the past, and mandatory fields (name, contact, license number) must be completed before submission. Any validation errors are highlighted for correction.
 
+
+
 ## Edit an Existing Driver
 
 Driver profiles can be updated at any time to reflect changes in credentials, assignments, or availability.
@@ -62,6 +68,8 @@ Common updates include:
 - **Status changes**: Toggle between Active and Inactive status for leave, training, or termination.
 - **Certifications**: Add new skills or qualifications as drivers complete training programs.
 - **Access control**: Enable or disable driver app access based on role changes.
+
+![Editer Driver Tools](./img/EditDriver.png)
 
 Editing driver profiles ensures accurate dispatch operations, maintains compliance with licensing requirements, and supports dynamic workforce management. The system retains historical assignment data for reporting and auditing purposes.
 

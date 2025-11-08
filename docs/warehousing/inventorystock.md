@@ -26,6 +26,8 @@ Proper stock management ensures fulfillment accuracy, reduces picking errors, su
 
 The Inventory Stock List displays all current stock records across warehouses, providing comprehensive visibility into item availability and locations.
 
+ ![Stock List Tools](./img/StockList.png)
+
 Use the list to monitor stock levels, verify bin assignments, and identify discrepancies that may require adjustment. The interface includes:
 
 - **Search functionality**: Quickly locate stock by item name, SKU, warehouse, bin location, lot number, or serial number.
@@ -38,6 +40,8 @@ The list displays key information such as warehouse name, item (SKU), bin locati
 ## Update or Adjust Stock
 
 Stock adjustments allow administrators to manually correct inventory quantities when discrepancies arise or when recording non-operational stock changes.
+
+  ![Add Stock Tools](./img/AddStock.png)
 
 Common reasons for stock adjustments include:
 
@@ -56,21 +60,7 @@ The system validates that all required fields are completed, quantities are posi
 
 Adjustments should be made sparingly and only when operational workflows (Receiving, Picking, Transfers) cannot be used. Over-reliance on manual adjustments can introduce inconsistencies and reduce audit trail integrity. Always document the reason for adjustments and follow approval processes where required.
 
-## View Stock Details
 
-The stock details view provides comprehensive information about a specific inventory record, including its history and current status.
-
-Each stock detail screen displays:
-
-- **Warehouse and location**: The facility and exact bin location where the item is stored.
-- **Item information**: Product name, SKU, and description for clear identification.
-- **Quantity details**: Current available quantity and unit of measure.
-- **Lot and serial tracking**: Batch number and serial identifier if applicable, supporting traceability requirements.
-- **Timestamps**: Creation date and last modification date for audit purposes.
-- **User attribution**: Who created the stock record and who last updated it, ensuring accountability.
-- **Notes and context**: Any additional information or adjustment reasons recorded during creation or updates.
-
-The details view helps administrators verify stock accuracy, investigate discrepancies, and understand the history of changes made to specific inventory records. It also provides visibility into which users performed stock operations, supporting accountability and audit compliance.
 
 :::note
 Keep stock records accurate by using operational workflows (Receiving, Picking, Transfers) whenever possible. Manual adjustments should be reserved for corrections and exceptions.

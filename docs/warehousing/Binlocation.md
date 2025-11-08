@@ -34,11 +34,15 @@ Use the list to monitor location status, review capacity, and manage warehouse s
 - **Sorting capabilities**: Sort by warehouse, location code, type, capacity, or status.
 - **Quick actions**: Access location details, edit configurations, or change status directly from the list.
 
+ ![Location List Tools](./img/LocationList.png)
+
 The list displays key information including warehouse name, location code, location type, capacity, security level, and current status for easy reference and operational oversight.
 
 ## Create a New Bin Location
 
 Creating a bin location requires defining its warehouse association, organizational attributes, and operational constraints to ensure accurate inventory placement and efficient storage management.
+
+ ![Add Location Tools](./img/CreateLocation.png)
 
 ### Warehouse Association
 
@@ -73,6 +77,8 @@ Common updates include:
 - **Security level updates**: Adjust access restrictions as inventory sensitivity or compliance requirements change.
 - **Status changes**: Toggle between Active and Inactive status for maintenance, reconfiguration, or temporary closures.
 - **Type reclassification**: Change location type to align with warehouse layout changes or storage strategy updates.
+
+ ![Edit location Tools](./img/EditLocation.png)
 
 Editing bin locations ensures accurate inventory placement, maintains compliance with warehouse policies, and supports dynamic space management. The system retains historical data for reporting and auditing purposes.
 

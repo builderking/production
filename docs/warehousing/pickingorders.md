@@ -29,12 +29,11 @@ The Picking Order List displays all picking operations across warehouses, provid
 - **Track assignment and accountability** by viewing which staff member is responsible for each order.
 - **Monitor progress** in real-time to identify bottlenecks or delays in picking operations.
 
+ ![Picking List Tools](./img/PickingList.png)
+
 The list view serves as the operational dashboard for warehouse managers, offering insight into current workload, task distribution, and fulfillment readiness.
 
-<!-- screenshot placeholder -->
-> [screenshot of picking orders list page]
 
----
 
 ## Create a New Picking Order
 
@@ -52,12 +51,11 @@ Picking orders translate customer orders or delivery schedules into actionable w
 - **Assignment and accountability**: Assign the picking task to a specific staff member to track performance and ensure responsibility.
 - **Status tracking**: Set the initial status (typically Pending) and update it as the task progresses through In Progress to Completed.
 
+ ![Create Picking Tools](./img/AddPicking.png)
+
 Picking orders integrate with inventory stock records and delivery workflows. Completed picking orders may trigger inventory deductions, packing tasks, or shipment notifications.
 
-<!-- screenshot placeholder -->
-> [screenshot of add picking order form]
 
----
 
 ## Edit an Existing Picking Order
 
@@ -78,12 +76,11 @@ Editing a picking order allows you to update task details, reassign staff, or ad
 - **Quantity adjustments** may require validation against current inventory stock to prevent shortages.
 - **Completed orders** typically lock the record to preserve audit trails and prevent accidental modifications.
 
+![Edit Picking Tools](./img/EditPicking.png)
+
 Editing ensures that picking orders remain accurate and aligned with operational realities, supporting smooth fulfillment workflows.
 
-<!-- screenshot placeholder -->
-> [screenshot of edit picking order form]
 
----
 
 ### Best Practices
 

@@ -24,6 +24,9 @@ The dashboard displays aggregated performance metrics and individual driver stat
 
 The dashboard automatically refreshes based on selected filters, providing real-time insights into driver performance patterns and operational efficiency.
 
+![Driver Performance Tools](./img/DriverPerfornamce.png)
+
+
 ## Performance Metrics
 
 The system tracks and displays several key performance indicators to evaluate driver effectiveness:

@@ -39,6 +39,7 @@ Screenshot placeholder: Delivery Services overview
 
 The Delivery Service List provides a centralized view of all configured delivery offerings within your system. This interface allows you to monitor, compare, and manage multiple service types from a single location.
 
+
 ### Overview
 
 The list displays essential attributes for each service:
@@ -60,17 +61,20 @@ The interface supports efficient navigation through:
 - **Status Filter**: Show active, inactive, or all services
 - **Sort Options**: Organize by name, creation date, or service level
 
+![service list Tools](./img/Servicelis.png)
+![service list Tools](./img/Servicelist1.png)
+
 These tools help administrators quickly identify and manage services, especially when operating multiple concurrent offerings across different customer segments or regions.
 
-:::note
-Screenshot placeholder: Delivery Services list with filters
-:::
+
 
 ---
 
 ## Create a New Delivery Service
 
 Creating a Delivery Service establishes a new fulfillment option within your logistics framework. This process involves defining the service's operational parameters, access rules, and pricing structure to align with your business strategy.
+
+![Add Service Tools](./img/AddService.png)
 
 ### Purpose of Service Configuration
 
@@ -163,11 +167,7 @@ The system enforces several validation rules to maintain data integrity:
 Use consistent naming conventions for service codes (e.g., `SRV-EXP-001`, `SRV-ECO-002`). Align pricing with service-level agreements. Configure zone-level pricing for geographic accuracy. Review configurations regularly as operational strategies evolve.
 :::
 
-:::note
-Screenshot placeholder: Create Delivery Service form
-:::
 
----
 
 ## Edit an Existing Delivery Service
 
@@ -215,13 +215,13 @@ Edits to Delivery Services affect **new orders** and **future operations** while
 - Reporting and analytics reflect changes going forward, with historical data remaining accurate to the original configuration
 - Zone-based pricing associations remain intact unless explicitly modified
 
+![Edit Service Tools](./img/EditService.png)
+
 :::tip
 Document significant service changes for stakeholder communication. Notify affected customers when access rules or pricing structures change. Test configuration updates in non-production environments when available.
 :::
 
-:::note
-Screenshot placeholder: Edit Delivery Service form
-:::
+
 
 ---
 

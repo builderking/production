@@ -32,11 +32,15 @@ Use the list to monitor facility status, verify capacity, and manage access perm
 - **Sorting capabilities**: Sort by name, code, capacity, or recent activity.
 - **Quick actions**: Access warehouse details, edit profiles, or change status directly from the list.
 
+ ![Warehouse list Tools](./img/WarehouseList.png)
+
 The list displays key information such as warehouse name, unique code, address, storage capacity, special features, access mode, and current status for easy reference.
 
 ## Create a New Warehouse
 
 Creating a warehouse profile requires entering key information across several categories to ensure accurate facility management and operational efficiency.
+
+ ![Add Warehouse List](./img/CreateWarehouse.png)
 
 ### Basic Information
 
@@ -78,6 +82,8 @@ Common updates include:
 - **Status changes**: Toggle between Active and Inactive status for maintenance, closures, or seasonal operations.
 - **Access control updates**: Modify user permissions as staffing or security policies change.
 - **Code or name changes**: Standardize naming conventions across the network (use caution with code changes as they may affect integrations).
+
+ ![Edit Warehouse Tools](./img/EditWarehouse.png)
 
 Editing warehouse profiles ensures accurate dispatch operations, maintains compliance with storage requirements, and supports dynamic facility management. The system retains historical data for reporting and auditing purposes.
 

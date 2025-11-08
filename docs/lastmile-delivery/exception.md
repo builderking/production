@@ -21,6 +21,8 @@ Screenshot placeholder: Exception details view
 
 The Exception List provides a comprehensive view of all logged issues across delivery operations, helping managers monitor problems, track resolution progress, and identify patterns that require operational improvements.
 
+![Exception List Tools](./img/Exceptionlist.png)
+
 Use the list to review active issues, verify resolution status, and analyze exception trends. The interface includes:
 
 - **Search functionality**: Quickly locate exceptions by delivery code, driver name, or customer details.
@@ -37,6 +39,8 @@ Exceptions progress through a resolution lifecycle: Pending (issue logged, await
 Creating an exception requires logging key information to document the issue and support effective resolution.
 
 Exceptions are typically created when delivery problems occur that require operational intervention, documentation, or customer communication. Common scenarios include delivery failures, package damage discovered during pickup or transit, customer unavailability after multiple attempts, address errors that prevent delivery completion, or vehicle breakdowns affecting service fulfillment.
+
+![Add Exception Tools](./img/AddException.png)
 
 ### Delivery & Driver Information
 
@@ -70,6 +74,8 @@ Common updates include:
 - **Evidence additions**: Upload additional photos or documentation to support claims processing, insurance verification, or customer service resolution.
 - **Exception reclassification**: Correct exception type if initial categorization was inaccurate or if issue investigation reveals a different root cause.
 - **Customer communication logs**: Record details of customer outreach, resolution agreements, refund processing, or service recovery actions taken.
+
+![Edit Exception Tools](./img/EditException.png)
 
 Updating exception records ensures accurate tracking, maintains complete audit trails, and enables meaningful reporting on exception trends, resolution times, and operational performance. Regular exception review and timely status updates help operations teams identify systemic issues, implement process improvements, and maintain high service quality standards.
 

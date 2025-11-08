@@ -40,6 +40,8 @@ Creating a return request requires documenting key information to ensure proper 
 
 Return requests are typically created when customers report dissatisfaction with delivered items, when quality issues are identified post-delivery, when delivery attempts fail and packages require retrieval, or when inventory discrepancies necessitate product returns. Common return scenarios include damaged items discovered upon customer receipt, incorrect products shipped due to fulfillment errors, customer order cancellations after dispatch, quality defects requiring replacement or refund, or access failures preventing successful delivery completion.
 
+![Return Request Tools](./img/ReturnRequiest.png)
+
 ### Warehouse & Delivery Linking
 
 Select the warehouse responsible for receiving and processing the returned goods. Warehouse assignment determines which facility will handle inspection, restocking, or disposal operations, and ensures return routing aligns with inventory management protocols. Link the return request to the specific delivery order that originated the shipment. This association maintains complete traceability between outbound deliveries and inbound returns, supports accurate inventory reconciliation, and enables analytics on return rates by delivery type, customer, or product category.

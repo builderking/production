@@ -24,6 +24,8 @@ Use the list to monitor role assignments, verify access configurations, and mana
 - **Sorting capabilities**: Sort by warehouse, staff user, role, or current status.
 - **Quick actions**: Access staff details, edit assignments, or change status directly from the list.
 
+![Staff List Tools](./img/StaffList.png)
+
 The list displays key information such as assigned warehouse, linked staff user, operational role, and current status for easy reference and workforce management.
 
 ## Create a New Staff Member
@@ -31,6 +33,8 @@ The list displays key information such as assigned warehouse, linked staff user,
 Creating a staff profile requires linking an existing user account to a warehouse and defining their operational role and access permissions.
 
 Staff assignment connects registered users with warehouse-level responsibilities, granting them the appropriate permissions to perform tasks such as inventory management, order picking, receiving operations, or supervision. Once a user is assigned as staff, they gain access to warehouse-specific features and applications based on their designated role.
+
+ ![Add Staff Tools](./img/AddStaff.png)
 
 ### Warehouse Assignment
 
@@ -69,6 +73,8 @@ Common updates include:
 - **Status updates**: Toggle between Active and Inactive status for leave management, role transitions, or workforce changes.
 - **Warehouse reassignment**: Move staff members to different warehouse locations as operational requirements evolve.
 - **Access control**: Adjust permissions and access configurations to align with current responsibilities.
+
+ ![Edit Staff Tools](./img/EditStaff.png)
 
 Editing staff profiles ensures accurate warehouse operations, maintains proper access controls, and supports dynamic workforce management. The system retains historical assignment data for reporting, auditing, and compliance purposes.
 

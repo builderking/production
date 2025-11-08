@@ -36,17 +36,19 @@ Use the list to monitor pending arrivals, verify receipt confirmations, and mana
 - **Sorting capabilities**: Sort by expected arrival date, creation date, supplier, or status.
 - **Quick actions**: Access order details, update status, or modify shipment information directly from the list.
 
+ ![Receiving List Tools](./img/ReceivingList.png)
+
 The list displays key information such as warehouse destination, supplier source, expected arrival date, current status, and order creation timestamp for easy reference and inbound logistics management.
 
-::::note
-Screenshot placeholder: Receiving Orders list view
-::::
+
 
 ## Create a New Receiving Order
 
 Creating a Receiving Order establishes a record for expected inbound inventory, linking the shipment to a warehouse, supplier, and arrival schedule. This process enables warehouse teams to prepare for incoming goods and ensures inventory updates occur upon receipt.
 
 Receiving Orders connect procurement activities with warehouse operations by documenting what is expected, when it should arrive, and where it should be stored. Once goods are physically received and verified, the order status transitions to Received, triggering inventory stock updates and maintaining accurate visibility across the supply chain.
+
+ ![Add Receiving Tools](./img/AddReceiving.png)
 
 ### Warehouse Assignment
 
@@ -92,9 +94,6 @@ Status tracking enables real-time visibility into inbound operations, helps iden
 
 The system validates all required fields and enforces business rules to maintain data integrity. Warehouse and supplier selections are mandatory, expected arrival dates must be current or future dates, and item quantities (when provided) must be numeric. The system prevents duplicate receiving orders for the same supplier and date combination, ensuring each inbound shipment is uniquely tracked. Validation errors are highlighted for correction before submission.
 
-::::note
-Screenshot placeholder: Create Receiving Order form
-::::
 
 ## Edit an Existing Receiving Order
 
@@ -107,6 +106,8 @@ Common updates include:
 - **Item detail refinement**: Add or modify item-level information as suppliers provide complete shipping manifests or when partial shipments alter expected quantities.
 - **Bin location updates**: Revise storage assignments based on actual warehouse capacity or inventory placement strategies at time of receipt.
 - **Supplier corrections**: Update supplier information if initial records were incorrect or if shipment responsibility transferred between vendors.
+
+ ![Edit Receiving Tools](./img/EditReceiving.png)
 
 Editing receiving orders ensures warehouse operations remain aligned with actual inbound logistics, maintains accurate expectations for arriving goods, and supports dynamic inventory planning. The system retains historical data for audit trails, reconciliation, and supplier performance analysis.
 

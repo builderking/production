@@ -22,11 +22,15 @@ Use the list to monitor vehicle availability, verify specifications, and manage 
 - **Sorting capabilities**: Sort by name, code, capacity, or recent activity.
 - **Quick actions**: Access vehicle details, edit profiles, or change status directly from the list.
 
+![Edit Vehicle Tools](./img/vehiclelist.png)
+
 The list displays key information such as vehicle name, unique code, capacity units, assigned driver, fuel type, and current status for easy reference.
 
 ## Create a New Vehicle
 
 Creating a vehicle profile requires entering key information across several categories to ensure accurate load management and operational efficiency.
+
+![Add Vehicl Tools](./img/AddVehicle.png)
 
 ### Basic Information
 
@@ -60,6 +64,8 @@ Common updates include:
 - **Identification updates**: Modify vehicle name, code, or description for better organization.
 - **Feature updates**: Add or remove special features as vehicles are retrofitted or upgraded.
 - **Driver reassignment**: Update vehicle-driver assignments based on operational needs.
+
+![Edit Vehicl Tools](./img/EditVehicle.png)
 
 Editing vehicle profiles ensures accurate dispatch operations, maintains optimal load distribution, and supports dynamic fleet management. The system retains historical assignment data for reporting and auditing purposes.
 

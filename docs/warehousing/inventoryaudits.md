@@ -27,6 +27,8 @@ Audits are typically scheduled based on business needs—high-movement SKUs may 
 
 The Inventory Audit List displays all audit records across warehouses, providing visibility into verification activities, outcomes, and current status.
 
+ ![Audit List Tools](./img/AuditList.png)
+
 Use the list to monitor audit completion, review variance results, and identify items requiring attention. The interface includes:
 
 - **Search functionality**: Quickly locate audits by warehouse, audit ID, audit type, or performer.
@@ -39,6 +41,8 @@ The list displays key information such as audit ID, warehouse, audit type, creat
 ## Create a New Inventory Audit
 
 Creating an inventory audit establishes the scope, timing, and items to be verified during the physical count process.
+
+ ![Add Audit Tools](./img/AddAudit.png)
 
 ### Audit Scope and Frequency
 
@@ -58,27 +62,7 @@ Optional fields include remarks or notes that provide context about the audit pu
 
 For targeted audits, administrators select the specific items to verify. Each audit item includes the warehouse (auto-filled from the audit header), the item or SKU being counted, the current system quantity for reference, and a field to record the physical quantity during the count. Variances are calculated automatically and displayed for immediate visibility into discrepancies.
 
-## Edit or Finalize Audit
 
-Inventory audits progress through stages as they are conducted and reviewed. Understanding how results are updated and approved ensures accuracy and accountability throughout the verification process.
-
-### Audit Status Flow
-
-Audits typically move through the following stages: Draft audits are created but not yet started and are not visible in operational reports. In Progress audits are actively being counted, with physical quantities being recorded. Completed audits have finished counting and variance calculations are finalized. Adjusted status (optional) indicates that inventory corrections have been applied based on audit findings.
-
-### Updating Audit Results
-
-During the audit process, personnel record physical counts for each item being verified. Physical quantities can be entered or updated while the audit is in Draft or In Progress status. As counts are recorded, variance calculations update automatically to reflect the difference between system and physical quantities.
-
-Remarks and notes can be added or updated at any time to document observations, explain discrepancies, or provide context for variance resolution. These notes support audit trail requirements and help teams understand the root causes of inventory inaccuracies.
-
-### Finalizing and Approval
-
-Once all physical counts are recorded and verified, the audit is marked as Completed. Completed audits become read-only to preserve the integrity of the audit record. If discrepancies are found, variances are reviewed and authorized personnel determine whether inventory adjustments are required.
-
-For audits with significant variances, authorization workflows may require supervisory approval before stock adjustments are applied. This ensures that large discrepancies are investigated and validated before impacting system quantities. Adjustments are typically processed through the Inventory Stock or Inventory Transactions modules, with reference back to the audit record for traceability.
-
-Audits should not be modified after completion. If additional counts are needed or errors are discovered, a new audit should be created rather than editing completed records. This preserves the audit trail and maintains historical accuracy for reporting and compliance purposes.
 
 :::note
 Conduct cycle counts regularly for high-movement items to maintain ongoing accuracy and reduce the need for disruptive full warehouse audits. Use two-person verification for high-value or sensitive stock.

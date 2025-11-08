@@ -10,9 +10,7 @@ An Inventory Transaction records the movement of stock within or between warehou
 
 Transactions ensure that all inventory movements are traceable, auditable, and reflected accurately in real-time stock levels. They support operational workflows such as stock adjustments, inter-warehouse transfers, zone reorganizations, and damage or loss corrections.
 
-:::note
-Screenshot placeholder: Inventory Transactions overview
-:::
+
 
 ### Purpose
 
@@ -30,9 +28,7 @@ Administrators can:
 
 All inventory transactions are displayed in a centralized list view. This view provides a complete activity log of stock movements across the organization.
 
-:::note
-Screenshot placeholder: Inventory Transactions list page
-:::
+   ![Transaction List Tools](./img/TransactionList.png)
 
 The list can be filtered by warehouse, SKU, transaction type, date range, or performer to quickly locate specific movements or analyze patterns.
 
@@ -54,9 +50,7 @@ The list can be filtered by warehouse, SKU, transaction type, date range, or per
 
 Transactions are created when stock needs to be moved between storage locations or when inventory adjustments are required.
 
-:::note
-Screenshot placeholder: Create Inventory Transaction form
-:::
+ ![Add Transaction Tools](./img/AddTransaction.png)
 
 Admins initiate transactions by clicking **Add Transaction**. The system then records the details and updates stock levels in both the source and destination bins atomically.
 
@@ -84,36 +78,7 @@ Admins initiate transactions by clicking **Add Transaction**. The system then re
 
 > Why: These fields ensure each transaction is fully documented, traceable, and auditable across operational and compliance workflows.
 
-### Edit an Existing Transaction
 
-Certain transaction details can be edited after creation to correct errors or update context. However, critical fields that impact stock balances — such as **Warehouse**, **From Bin**, **To Bin**, and **Quantity** — are typically locked after the transaction is saved to preserve audit integrity.
-
-:::note
-Screenshot placeholder: Edit Inventory Transaction form
-:::
-
-#### Editable fields and their significance:
-
-| Field | Editable | Why |
-| --- | --- | --- |
-| **Notes** | Yes | Allows clarification or additional context without affecting stock levels. |
-| **Transaction Type** | Yes | Enables recategorization for accurate reporting (e.g., from Transfer to Adjustment). |
-| **Reference Type** | Yes | Permits linking to the correct document or workflow reference if initially missed. |
-| **Performed By** | No | Locked to maintain accountability and prevent tampering with personnel records. |
-| **Warehouse** | No | Locked to preserve the integrity of warehouse-level stock balances. |
-| **SKU** | No | Locked to prevent accidental or unauthorized changes to item tracking. |
-| **From/To Bin** | No | Locked to ensure transaction history matches actual physical movements. |
-| **Quantity** | No | Locked to prevent retroactive stock changes; use a new adjustment transaction instead. |
-
-> Important: To reverse or adjust a locked transaction, create a new corrective transaction rather than editing the original. This maintains a complete, tamper-proof audit trail.
-
-### Validation Rules
-
-- **Warehouse, SKU, From Bin, To Bin, Quantity, Transaction Type, and Performed By** are mandatory.
-- **Quantity** must be greater than zero and cannot exceed available stock in the source bin.
-- **From Bin and To Bin** must be different locations.
-- **Reference Type** should be selected when linking to operational workflows.
-- Invalid or incomplete entries trigger inline validation alerts.
 
 ### Best Practices
 

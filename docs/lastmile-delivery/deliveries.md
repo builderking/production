@@ -28,11 +28,17 @@ Use the list to monitor order status, track delivery progress, and manage dispat
 
 The list displays key information such as delivery code, customer, service type, pickup and drop‑off locations, priority, current status, and assigned driver for easy reference and monitoring.
 
+![delivery list Tools](./img/deliverieslist.png)
+
+![delivery list Tools](./img/deliverieslist1.png)
+
 Deliveries progress through a lifecycle as they move from creation to completion: Pending (order created but not assigned), Assigned (allocated to a driver), Pickup (driver collecting package), In‑Transit (en route to destination), and Delivered (successfully completed). This status tracking enables real‑time monitoring and helps operations teams manage dispatch workflows and resolve issues proactively.
 
 ## Create a New Delivery
 
 Creating a delivery requires entering key information across several categories to ensure accurate dispatch, tracking, and billing.
+
+![Add Delivery Tools](./img/AddDelivery.png)
 
 ### Customer & Service Details
 
@@ -71,6 +77,8 @@ Common updates include:
 - **Priority changes**: Adjust priority level based on changing business requirements or customer urgency.
 - **Instruction updates**: Add or modify notes to provide additional context, change delivery instructions, or communicate special requirements to drivers.
 - **Package detail corrections**: Update unit size, package type, or contents description to reflect accurate information.
+
+![Edit Delivery Tools](./img/EditDelivery.png)
 
 Certain edits may be restricted based on delivery status to maintain data integrity and prevent conflicts with in‑progress deliveries. For example, completed deliveries may only allow note additions for record-keeping purposes. The system retains historical delivery data for reporting, auditing, and performance analysis.
 
