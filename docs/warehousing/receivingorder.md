@@ -36,7 +36,7 @@ Use the list to monitor pending arrivals, verify receipt confirmations, and mana
 - **Sorting capabilities**: Sort by expected arrival date, creation date, supplier, or status.
 - **Quick actions**: Access order details, update status, or modify shipment information directly from the list.
 
- ![Receiving List Tools](./img/ReceivingList.png)
+ ![Receiving List Tools](./img/ReceivedList.png)
 
 The list displays key information such as warehouse destination, supplier source, expected arrival date, current status, and order creation timestamp for easy reference and inbound logistics management.
 

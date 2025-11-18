@@ -42,7 +42,7 @@ The list displays key information including warehouse name, location code, locat
 
 Creating a bin location requires defining its warehouse association, organizational attributes, and operational constraints to ensure accurate inventory placement and efficient storage management.
 
- ![Add Location Tools](./img/CreateLocation.png)
+ ![Add Location Tools](./img/AddLocation.png)
 
 ### Warehouse Association
 

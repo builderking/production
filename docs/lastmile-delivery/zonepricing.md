@@ -88,7 +88,7 @@ The list view supports several administrative functions:
 - **Expiration Tracking**: Monitor approaching end dates for seasonal or promotional pricing
 - **Service Parity**: Verify that multiple services on the same route reflect intended pricing differentiation
 
-![Pricing List Tools](./img/pricinglist.png)
+![Pricing List Tools](./img/PricingList.png)
 
 
 ## Create a New Zone Pricing Rule

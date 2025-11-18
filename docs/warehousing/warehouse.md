@@ -40,7 +40,7 @@ The list displays key information such as warehouse name, unique code, address, 
 
 Creating a warehouse profile requires entering key information across several categories to ensure accurate facility management and operational efficiency.
 
- ![Add Warehouse List](./img/CreateWarehouse.png)
+ ![Add Warehouse List](./img/AddWarehouse.png)
 
 ### Basic Information
 

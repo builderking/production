@@ -13,9 +13,7 @@ An Assignment is the operational link between a delivery order, a driver, and a 
 
 Each assignment captures essential details including the assigning user, assigned driver, vehicle used, timing information, and the related delivery order code. This structure ensures accountability, enables real‑time status tracking, and provides visibility into driver workloads and delivery progress from dispatch to completion.
 
-::::note
-Screenshot placeholder: Assignment details view
-::::
+
 
 ## Assignment List
 
@@ -30,7 +28,7 @@ Use the list to monitor active deliveries, verify driver workloads, and manage d
 
 The list displays key information such as assigned by (dispatcher), assigned to (driver), vehicle, assignment time, delivery code, and current status for easy reference and workload monitoring.
 
-![Assignment List Tools](./img/Assignmentlist.png)
+![Assignment List Tools](./img/AssignmentList.png)
 
 Assignments progress through a fixed status flow as deliveries move through their lifecycle: Assigned (allocated but not started), Pickup (collecting package from origin), In‑Transit (en route to destination), and Completed (delivery finished and confirmed). This status tracking enables real‑time monitoring of each delivery's journey and helps operations teams resolve issues proactively.
 
@@ -74,7 +72,7 @@ Common updates include:
 - **Instruction updates**: Add or modify notes to provide additional context, change delivery instructions, or communicate special requirements.
 - **Status progression**: Update assignment status as the delivery progresses (Assigned → Pickup → In‑Transit → Completed). Status updates typically follow a strict sequence and may be restricted to prevent backward status changes.
 
-![Edit Delivery Tools](./img/EditDelivery.png)
+![Edit Delivery Tools](./img/EditAssignment.png)
 
 Certain edits may be restricted based on assignment status to maintain data integrity and prevent conflicts with in‑progress deliveries. For example, completed assignments may only allow note additions for record-keeping purposes. The system retains historical assignment data for reporting, auditing, and performance analysis.
 

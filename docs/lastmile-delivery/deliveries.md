@@ -11,9 +11,6 @@ description: View, create, and manage delivery orders within the Delivery Manage
 
 A delivery represents an individual shipment order created to transport goods or packages from a pickup location to a drop‑off location. Each delivery profile includes customer information, service type, locations, package details, payment method, and operational status. Deliveries form the backbone of the logistics workflow, linking drivers, vehicles, zones, and delivery services into one coordinated dispatch and tracking process.
 
-::::note
-Screenshot placeholder: Delivery details view
-::::
 
 ## Delivery List
 
@@ -28,9 +25,9 @@ Use the list to monitor order status, track delivery progress, and manage dispat
 
 The list displays key information such as delivery code, customer, service type, pickup and drop‑off locations, priority, current status, and assigned driver for easy reference and monitoring.
 
-![delivery list Tools](./img/deliverieslist.png)
+![delivery list Tools](./img/DeliveryList.png)
 
-![delivery list Tools](./img/deliverieslist1.png)
+![delivery list Tools](./img/DeliveryList1.png)
 
 Deliveries progress through a lifecycle as they move from creation to completion: Pending (order created but not assigned), Assigned (allocated to a driver), Pickup (driver collecting package), In‑Transit (en route to destination), and Delivered (successfully completed). This status tracking enables real‑time monitoring and helps operations teams manage dispatch workflows and resolve issues proactively.
 

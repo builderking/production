@@ -15,9 +15,7 @@ Typical scenarios for creating return requests include customer-initiated return
 
 Return requests progress through defined status stages—Pending (request created awaiting action), In Transit (package being returned to warehouse), Received (warehouse has taken possession), and Completed (return fully processed and resolved). This status tracking provides visibility into return workflows, supports SLA monitoring, and ensures accountability throughout the reverse logistics process.
 
-::::note
-Screenshot placeholder: Return Request details view
-::::
+
 
 ## Return Request List
 
@@ -40,7 +38,7 @@ Creating a return request requires documenting key information to ensure proper 
 
 Return requests are typically created when customers report dissatisfaction with delivered items, when quality issues are identified post-delivery, when delivery attempts fail and packages require retrieval, or when inventory discrepancies necessitate product returns. Common return scenarios include damaged items discovered upon customer receipt, incorrect products shipped due to fulfillment errors, customer order cancellations after dispatch, quality defects requiring replacement or refund, or access failures preventing successful delivery completion.
 
-![Return Request Tools](./img/ReturnRequiest.png)
+![Return Request Tools](./img/AddRequest.png)
 
 ### Warehouse & Delivery Linking
 

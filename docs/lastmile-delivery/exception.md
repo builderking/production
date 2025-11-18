@@ -13,9 +13,7 @@ An exception represents any issue that prevents a delivery from being completed 
 
 Typical issues logged as exceptions include failed deliveries, damaged packages, customer unavailability, incorrect addresses, access restrictions, or service delays. Each exception is categorized by type, assigned a resolution status (Pending, Resolved, or Closed), and linked to the specific delivery and driver involved. Supporting details such as photos, customer contact information, and operational notes provide context for investigation and enable timely resolution.
 
-::::note
-Screenshot placeholder: Exception details view
-::::
+
 
 ## Exception List
 

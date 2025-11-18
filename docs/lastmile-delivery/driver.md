@@ -22,7 +22,7 @@ Use the list to monitor driver availability, verify credentials, and manage assi
 - **Sorting capabilities**: Sort by name, code, recent activity, or license expiry date.
 - **Quick actions**: Access driver details, edit profiles, or change status directly from the list.
 
-![Driver List Tools](./img/driverlist.png)
+![Driver List Tools](./img/DriverList.png)
 
 The list displays key information such as driver name, unique code, assigned vehicle, zones, license expiry, and current status for easy reference.
 
@@ -32,7 +32,7 @@ Creating a driver profile requires entering key information across several categ
 
 When creating a driver, you can link the profile to an existing user account. Once you select a user during driver creation, that user automatically becomes a driver and gains access to driver-specific features and applications.
 
-![Add Driver Tools](./img/AdddDriver.png)
+![Add Driver Tools](./img/AddDriver.png)
 
 ### Basic Information
 
