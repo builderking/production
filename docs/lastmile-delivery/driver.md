@@ -22,7 +22,7 @@ Use the list to monitor driver availability, verify credentials, and manage assi
 - **Sorting capabilities**: Sort by name, code, recent activity, or license expiry date.
 - **Quick actions**: Access driver details, edit profiles, or change status directly from the list.
 
-![Driver List Tools](./img/DriverList.png)
+![Driver List Tools](./img/driverlist.png)
 
 The list displays key information such as driver name, unique code, assigned vehicle, zones, license expiry, and current status for easy reference.
 

@@ -58,7 +58,7 @@ The interface supports efficient navigation through:
 - **Status Filter**: Show active, inactive, or all services
 - **Sort Options**: Organize by name, creation date, or service level
 
-![service list Tools](./img/Servicelist.png)
+![service list Tools](./img/ServiceList.png)
 ![service list Tools](./img/Servicelist1.png)
 
 These tools help administrators quickly identify and manage services, especially when operating multiple concurrent offerings across different customer segments or regions.

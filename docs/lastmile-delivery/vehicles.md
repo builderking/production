@@ -22,7 +22,7 @@ Use the list to monitor vehicle availability, verify specifications, and manage 
 - **Sorting capabilities**: Sort by name, code, capacity, or recent activity.
 - **Quick actions**: Access vehicle details, edit profiles, or change status directly from the list.
 
-![Edit Vehicle Tools](./img/Vehiclelist.png)
+![Edit Vehicle Tools](./img/vehiclelist.png)
 
 The list displays key information such as vehicle name, unique code, capacity units, assigned driver, fuel type, and current status for easy reference.
 
